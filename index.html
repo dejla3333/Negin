@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Negin</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #1a1533;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+    }
+
+    /* Title */
+    h1 {
+        font-size: 34px;
+        font-weight: 500;
+        margin: 0;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 1.6s ease forwards;
+        color: #f8d98c;
+    }
+
+    /* Subtitle */
+    p {
+        margin-top: 12px;
+        font-size: 18px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 1.6s ease forwards .4s;
+        color: #d8ccff;
+        text-align: center;
+        max-width: 330px;
+        line-height: 1.5;
+    }
+
+    /* Gold line */
+    .line {
+        width: 0;
+        height: 2px;
+        background: #f8d98c;
+        margin-top: 20px;
+        animation: lineGrow 1.2s ease forwards 1s;
+    }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes lineGrow {
+        to {
+            width: 120px;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<h1>Happy Birthday, Negin </h1>
+
+<p>
+    Wishing you a peaceful, bright,  
+    and beautifully simple year ahead.
+</p>
+
+<div class="line"></div>
+
+</body>
+</html>
